@@ -2,8 +2,9 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
+    extend: {
+      fontFamily: {
+        michroma: ['Michroma', 'sans-serif'],
+      },
+    },
+  },}

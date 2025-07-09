@@ -11,3 +11,10 @@
 .containor{
   padding:30px;
 }
+.album{
+   margin: 0;
+  padding: 0;
+  background-image: url('../images/image9.png');
+  background-size: cover;
+  background-position: center;
+}

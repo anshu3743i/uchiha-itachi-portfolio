@@ -80,9 +80,9 @@
     <!--checking section-->
     <section
       id="section"
-      class="flex justify-center items-center dark:bg-black min-h-screen transition duration-1000"
+      class="flex justify-center items-center dark:bg-black min-h-screen transition duration-1000 flex-col"
     >
-      <div class="flex-col space-y-20">
+      <div class="flex flex-row space-x-20 justify-center items-center">
         <h1
           id="text"
           class="text-5xl font-bold items-center dark:text-white transition duration-1000"
@@ -90,7 +90,7 @@
           hello man how its going on
         </h1>
         <button
-          class="p-10 rounded-full  flex justify-center text-center transition duration-1000"
+          class="p-10 rounded-full flex justify-center text-center transition duration-1000"
           id="btn"
           onclick="Change()"
         >
@@ -98,7 +98,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="block dark:hidden h-8 p-1 bg-gray-300  rounded-full"
+            class="block dark:hidden h-8 p-1 bg-gray-300 rounded-full"
           >
             <path
               fill-rule="evenodd"
@@ -121,6 +121,35 @@
             />
           </svg>
         </button>
+      </div>
+      <div class="flex flex-row space-x-20 justify-between block">
+        <div>
+          <button
+            href=""
+            onclick="showMain()"
+            class="text-red-500 text-sm font-semibold "
+            >main page source</button
+          >
+        </div>
+        <div>
+          <button
+            href=""
+            onclick="showSecond()"
+            class="text-blue-400 text-sm font-semibold "
+            >second page source</button
+          >
+        </div>
+      </div>
+      <div id="mainContent" class="flex flex-col space-y-10 text-lg font-bold transition ease duration-500 dark:text-white">
+        <h1>hello main</h1>
+        <p>press by main</p>
+      </div>
+      <div
+        id="secondContent"
+        class="flex flex-col space-y-10 text-lg font-bold hidden transition ease duration-1000 dark:text-white"
+      >
+        <h1>hello second</h1>
+        <p>press by second</p>
       </div>
     </section>
     <script src="script.js"></script>

@@ -298,3 +298,80 @@ const showSecond = () => {
 // for(const x of users){if (x.name==='omi' && x.age===25){break;}
 //   console.log(x.name,x.age)
 // }
+// function startGame(playerGuess) {
+//   const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+//   console.log("Computer picked:", randomNumber);
+//   console.log("You guessed:", playerGuess);
+
+//   if (playerGuess === randomNumber) {
+//     console.log("🎉 Correct! You win!");
+//   } else {
+//     console.log("❌ Wrong! Try again.");
+//   }
+// }
+
+// // Example guesses:
+// startGame(9); // change this number to test
+
+// const students = ['alice','ash','snehaa']
+
+// for (const x in students){console.log(students[x])}
+
+// const users = [
+//   { id: 1, name: "Alice", age: 25 },
+//   { id: 2, name: "Bob", age: 30 },
+//   { id: 3, name: "Charlie", age: 28 }
+// ];
+// for(const user of users){console.log(user.name)}
+
+// const products = [
+//   { id: 1, name: "Pen", price: 10 },
+//   { id: 2, name: "Notebook", price: 20 }
+// ];
+// for(const  product of products ){
+//   let after ={ priceWithTax: product.price * 1.18}
+//   console.log(product.name ,after)
+// }
+
+// setTimeout(() => {
+//   console.log("This runs after 2 seconds");
+// }, 5000);
+
+// setTimeout(() => {
+//   console.log("hellow world");
+// }, 5000);
+
+// function greet (name){
+//   setTimeout(() =>{console.log('hello', name)},3000)}
+// greet('ash')
+
+// console.log("start coundown");
+// setTimeout(() => {
+//   console.log("countdown 1");
+// }, 1000),
+//   setTimeout(() => {
+//     console.log("countdown 2");
+//   }, 2000),
+//   setTimeout(() => {
+//     console.log("countdown 3");
+//   }, 3000),
+//   setTimeout(() => {
+//     console.log("countdown 4");
+//   }, 4000),
+//   setTimeout(() => {
+//     console.log("countdown 5");
+//   }, 5000);
+
+// for (let i=1;i<=5;i++){
+//   setTimeout(()=>{console.log(i)},i*2000)
+
+// }
+
+
+// function greet (name , callback){
+//   setTimeout(() => {console.log('hello',name)
+//     callback();
+//   },2000);
+// }
+// greet ('ash',()=>{console.log('greeting finished!')})

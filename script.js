@@ -452,3 +452,52 @@ const showSecond = () => {
 
 // let rahul = new student("rahul", 84,);
 // console.log(rahul, rahul.grades());
+
+// function greet(name, callback) {
+//   console.log("hello", name), callback();
+// }
+// function sayBye() {
+//   console.log("bye");
+// }
+// greet("rahul", sayBye);
+
+// function sayHello(name, callback) {
+//   console.log("hello",name);
+//   callback()
+// }
+// function greet() {
+//   console.log("Welcome to Node.js!");
+// }
+// sayHello('rahul',greet)
+
+// let str = 'aishwary'
+// console.log(str.toLocaleUpperCase())
+
+// function sayHello(callback){
+//   console.log('hello man')
+//   callback()
+// }
+// function sayBye(){
+//   console.log('bye man')
+// }
+// sayHello(sayBye)
+
+// function add(a,b,callback)
+// {result = a+b;
+//   callback(result)
+// }
+// function state(){
+//   console.log('ur result is',result)
+// }
+// add(5,5,state)
+
+// function add(a, b, callback) {
+//   let sum = a + b;
+//   callback(sum); // pass result to callback
+// }
+
+// function display(sum) {
+//   console.log("Result:", sum);
+// }
+
+// add(3, 7, display);

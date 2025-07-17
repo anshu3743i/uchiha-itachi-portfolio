@@ -368,10 +368,87 @@ const showSecond = () => {
 
 // }
 
-
 // function greet (name , callback){
 //   setTimeout(() => {console.log('hello',name)
 //     callback();
 //   },2000);
 // }
 // greet ('ash',()=>{console.log('greeting finished!')})
+
+// let hero = {
+//   calcTax() {
+//     console.log("hero time");
+//   },
+// };
+// // console.log(hero.calcTax)
+
+// let emp1 = {
+//   salary: 10000,
+// };
+
+// emp1.__proto__ = hero;
+
+// let users = {
+//   name: "ash",
+//   callback(name) {
+
+//     console.log("hello world", name);
+//   },
+// };
+
+// let rahul = {
+//   name: "rhl",
+// };
+// rahul.__proto__ = users;
+
+// console.log(rahul.callback());
+
+// class Person {
+//   constructor(name, studentClass, income) {
+//     this.name = name;
+//     this.studentClass = studentClass;
+//     this.income = income;
+//   }
+// }
+// class Aman {
+//   constructor() {
+//     this.name = 'Uday';
+//     this.studentClass = '4th year';
+//     this.income = 50;
+//   }
+// }
+// let alex = new Aman();
+// console.log(alex.name);         // Uday
+// console.log(alex.studentClass); // 4th year
+// console.log(alex.income);       // 50
+
+// class person {
+//   constructor(name, age) {
+//     (this.name = name), (this.age = age);
+//   }
+// }
+// let p1 = new person("ash", 40);
+// console.log(p1);
+
+// class student {
+//   constructor(name, marks,acheivement) {
+//     (this.name = name), (this.marks = marks),(this.acheivement=acheivement);
+//   }
+//   grades() {
+//     if (this.marks >= 80) {
+//       console.log("A grade");
+//     } else if (marks >= 60) {
+//       console.log("B grade");
+//     } else {
+//       console.log("C grade");
+//     }
+//   }
+// }
+
+// class acheivement{constructor(sport,fashion){
+//   this.sport='gold',
+//   this.fashion='silver'
+// }}
+
+// let rahul = new student("rahul", 84,);
+// console.log(rahul, rahul.grades());

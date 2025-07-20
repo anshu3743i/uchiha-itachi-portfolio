@@ -500,4 +500,146 @@ const showSecond = () => {
 //   console.log("Result:", sum);
 // }
 
-// add(3, 7, display);
+// add(3, 7, display);function fetchData(callback) {
+
+// function fetchData(callback) {
+//   console.log("Fetching data...");
+//   setTimeout(() => {
+//     callback('xyz');
+//   }, 2000);
+// }
+// fetchData(function(xyz) {  console.log(xyz);
+
+// });
+
+// function checkNumber(num, evencallback, oddcallback) {
+//   if (num % 2 === 0) {
+//     evencallback();
+//   } else {
+//     oddcallback();
+//   }
+// }
+// checkNumber(
+//   7,
+//   () => console.log("even"),
+//   () => console.log("odd")
+// );
+
+// function add(a, b, callback) {
+//   const result = a + b;
+//   callback(result);
+// }
+
+// add(4, 5, (result) => {
+//   console.log('Sum is:', result);
+// });
+
+// function result (name,marks,callback){
+//   console.log(name,marks)
+//   callback()
+// }
+// function royal(){console.log('7th')
+// }
+// result('ash',55,royal)
+
+// function evalu(name, marks, className, callback) {
+//   console.log("evaluating result..");
+//   setTimeout(() => {
+//     if (marks >= 50) {
+//       console.log("pass", "good job");
+//     } else {
+//       console.log("fail", "better luck next time");
+//     }
+//   }, 1000);
+//   callback(name, marks, className);
+// }
+// function cc(name,marks,className) {
+//   console.log("ur reuslt ", marks);
+//   console.log(className);
+//   setTimeout(() => {
+//     console.log("bye bye");
+//   }, 2000);
+// }
+// evalu("ash", 40, "7th", cc);
+
+// function fam(surname, caste, religion, callback) {
+
+//    surname = "sinha";
+//   console.log(surname);
+
+//    caste = "kalar";
+//   console.log(caste);
+
+//   callback(religion);
+// }
+
+// function cc(religion) {
+//    religion = religion || "um";
+//   console.log(religion);
+// }
+// fam("", "", "", cc);
+
+// function greet(name, city, callback) {
+//   name = "ash";
+//   console.log(name);
+//   setTimeout(() => {
+//     console.log("hey there");
+//   }, 2000);
+//   city = "raipur";
+//   console.log(city);
+//   callback(name);
+// }
+// function sayBye(name) {
+//   setTimeout(() => {
+//     console.log("bye bye", name);
+//   }, 4000);
+// }
+// greet("", "", sayBye);
+
+// function friend(name,clas,trip,callback){
+//   console.log('this is our friends biodata')
+//   setTimeout(() => {name='alex'
+//     console.log(name)
+
+//   }, 2000);
+//   clas='3rd year'
+//   console.log(clas)
+//   callback(trip)
+// }
+// function cc(trip){
+//   console.log('we have been everywhere')
+// }
+// friend("","","",cc)
+
+// function res(name, marks, callback) {
+//   console.log("evaluatinf result pls wait");
+//   setTimeout(() => {
+//     name = "sara";
+//     console.log(name);
+//   }, 2000);
+//   setTimeout(() => {
+//     if (marks >= 80) {
+//       callback(marks, name,"pass");
+//     } else {
+//       callback(marks,name, "fail");
+//     }
+//   }, 3000);
+// }
+// function cc(marks,name, status) {
+//   console.log("result for ",name, status);
+// }
+// res("", 83, cc);
+
+// function ide(name,className,occupation,callback){
+//   setTimeout(() => {
+//       name='rahul'
+//     console.log('hello',name)
+//     }, 2000);callback(className,occupation)
+// }
+// function cc(className,occupation){
+//   className='roudy'
+//   console.log(className)
+//   occupation = 'hero'
+//   console.log(occupation)
+// }
+// ide("","","",cc)

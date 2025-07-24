@@ -643,3 +643,41 @@ const showSecond = () => {
 //   console.log(occupation)
 // }
 // ide("","","",cc)
+// ...............................................
+
+// let promise = new Promise((resolve,reject)=>{console.log('i m promise')
+//   resolve('success')
+// // reject('some error occured')
+// // resolve(123)
+// })
+
+// function getData(dataid, getNextdata) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataid);
+//       resolve("success");
+//       if (getNextdata) {
+//         getNextdata();
+//       }
+//     }, 5000);
+//   });
+// }
+// getData(1, () => {
+//   console.log("getting data 2");
+//   getData(2,()=>{ console.log("getting data 3")});
+// });
+
+const mypromise = () => {
+  return new Promise((resolve, reject) => {
+    console.log("hello world");
+    resolve("success man");
+    // reject("error man");
+  });
+};
+mypromise()
+  .then((res) => {
+    console.log("promise fulfilled",res);
+  })
+  .catch((err) => {
+    console.log("rejected",err);
+  });

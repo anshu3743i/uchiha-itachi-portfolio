@@ -651,33 +651,112 @@ const showSecond = () => {
 // // resolve(123)
 // })
 
-// function getData(dataid, getNextdata) {
+// function getData(dataid) {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       console.log("data", dataid);
 //       resolve("success");
-//       if (getNextdata) {
-//         getNextdata();
-//       }
+//       // if (getNextdata) {
+//       //   getNextdata();
+//       // }
 //     }, 5000);
 //   });
 // }
+
 // getData(1, () => {
 //   console.log("getting data 2");
 //   getData(2,()=>{ console.log("getting data 3")});
 // });
 
-const mypromise = () => {
+// getData(1)
+// .then((id)=>{
+//   console.log('getting data 2')
+//   return getData(2)
+// })
+// .then((id)=>{console.log('getting data 3')
+//   return getData (3)
+// })
+
+// const mypromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("hello world");
+//     resolve("success man");
+//     // reject("error man");
+//   });
+// };
+// mypromise()
+//   .then((res) => {
+//     console.log("promise fulfilled",res);
+//   })
+//   .catch((err) => {
+//     console.log("rejected",err);
+//   });
+
+// function sks() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data 1");
+//       resolve("success");
+//     }, 4000);
+//   });
+// }
+// function vss() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data 2");
+//       resolve("success");
+//     }, 4000);
+//   });
+// }
+// console.log("fetching data 1...");
+// sks().then((res) => {
+//   console.log(res);
+//   console.log("fetching data 2...");
+//   vss().then((res) => {
+//     console.log("fetching data 3");
+//   });
+// });
+
+// function getData(dataid) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataid);
+//       resolve("success");
+//       // if (getNextdata) {
+//       //   getNextdata();
+//       // }
+//     }, 5000);
+//   });
+// }
+// getData(1).then((res) => {
+//   console.log(res);
+//   getData(2).then((res) => {
+//     console.log(res);
+//     getData(3).then((res)=>{console.log(res)})
+
+//   });
+// });
+
+function getData(dataid) {
   return new Promise((resolve, reject) => {
-    console.log("hello world");
-    resolve("success man");
-    // reject("error man");
+    setTimeout(() => {
+      console.log("data", dataid);
+      resolve("success");
+      // if (getNextdata) {
+      //   getNextdata();
+      // }
+    }, 2000);
   });
-};
-mypromise()
+}
+getData(1)
   .then((res) => {
-    console.log("promise fulfilled",res);
+    console.log(res);
+    return getData(2);
   })
-  .catch((err) => {
-    console.log("rejected",err);
+  .then((res) => {
+    console.log(res);
+    return getData(3);
+  })
+  .then((res) => {
+    console.log(res);
   });

@@ -737,26 +737,59 @@ const showSecond = () => {
 //   });
 // });
 
-function getData(dataid) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("data", dataid);
-      resolve("success");
-      // if (getNextdata) {
-      //   getNextdata();
-      // }
-    }, 2000);
-  });
-}
-getData(1)
-  .then((res) => {
-    console.log(res);
-    return getData(2);
-  })
-  .then((res) => {
-    console.log(res);
-    return getData(3);
-  })
-  .then((res) => {
-    console.log(res);
-  });
+// function getData(dataid) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataid);
+//       resolve("success");
+//       // if (getNextdata) {
+//       //   getNextdata();
+//       // }
+//     }, 2000);
+//   });
+// }
+// getData(1)
+//   .then((res) => {
+//     console.log(res);
+//     return getData(2);
+//   })
+//   .then((res) => {
+//     console.log(res);
+//     return getData(3);
+//   })
+//   .then((res) => {
+//     console.log(res);
+//   });
+
+// function getData(dataId){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//       console.log('data', dataId)
+//       resolve('success')
+//     }, 2000);
+//   })
+// }
+// async function aryan(){
+//   await getData(7)
+//   console.log('getting data 8')
+//   await getData(8)
+//   console.log('getting data 10')
+//   await getData(10)
+// }
+// aryan()
+
+// function getData(dataId){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//       console.log('data', dataId)
+//       resolve('success')
+//     }, 2000);
+//   })
+// }
+// (async function aryan(){
+//   await getData(7)
+//   console.log('getting data 8')
+//   await getData(8)
+//   console.log('getting data 10')
+//   await getData(10)
+// })();

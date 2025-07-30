@@ -793,3 +793,70 @@ const showSecond = () => {
 //   console.log('getting data 10')
 //   await getData(10)
 // })();
+
+// function wait() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {resolve('success')}, 2000);
+//   });
+// }
+// async function royal() {let msg = await wait()
+//   console.log(msg)
+// }
+// royal()
+
+// const url = 'https://cat-fact.herokuapp.com'
+// const getf = async ()=>{
+//   console.log('getting data')
+//   let response = await fetch (url)
+//   console.log(response.status)
+// }
+// getf()
+
+
+
+// function getUser() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve({ username: "ash", userLastname: "sinha" });
+//     }, 2000);
+//   });
+// }
+// function userLocation() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve({ location: "raipur", locationid: "37" });
+//     }, 2000);
+//   });
+// }
+// function weather() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve({ tempreature: "37" });
+//     }, 2000);
+//   });
+// }
+// async function getWeather() {
+//   console.log("getting username.....");
+//   let msg = await getUser();
+//   console.log(msg);
+//   console.log("getting userlocation....");
+//   let msg2 = await userLocation();
+//   console.log(msg2);
+//   console.log("getting userweather...");
+
+//   let msg3 = await weather();
+//   console.log(msg3);
+//   console.log(
+//     "hii",
+//     msg.username,
+//     msg.userLastname,
+//     "!The weather in",
+//     msg2.location,
+//     "is",
+//     msg3.tempreature,
+//     "degree celcius"
+//   );
+// }
+// getWeather();
+
+
